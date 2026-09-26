@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sky Guard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <div>
+        <p class="eyebrow">MINI ARCADE</p>
+        <h1>Sky Guard</h1>
+      </div>
+      <p class="hint">Arrow keys / A D to move · Space to fire · R to restart</p>
+    </header>
+    <section class="hud" aria-label="Game status">
+      <span>Score <strong id="score">0</strong></span>
+      <span>Level <strong id="level">1</strong></span>
+      <span>Shield <strong id="lives">3</strong></span>
+    </section>
+    <canvas id="game" width="800" height="520" aria-label="Sky Guard game canvas"></canvas>
+    <p id="message" class="message">Press Space to start</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

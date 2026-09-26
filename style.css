@@ -1,0 +1,13 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(circle at top, #193258, #080d1d 65%); color: #eaf3ff; }
+.game-shell { width: min(94vw, 850px); }
+header, .hud { display: flex; justify-content: space-between; align-items: end; gap: 1rem; }
+h1 { margin: 0 0 .4rem; letter-spacing: .08em; }
+.eyebrow { color: #67e8f9; margin: 0; font-size: .75rem; letter-spacing: .2em; }
+.hint { color: #a9bad5; font-size: .85rem; text-align: right; }
+.hud { margin: .5rem 0; padding: .7rem 1rem; border: 1px solid #284467; background: #101d35cc; border-radius: 12px; }
+.hud span { color: #a9bad5; }.hud strong { color: #fff; margin-left: .35rem; }
+canvas { width: 100%; height: auto; display: block; border: 2px solid #3c6c99; border-radius: 14px; background: #071020; box-shadow: 0 12px 40px #0008; }
+.message { text-align: center; color: #67e8f9; min-height: 1.5em; }
+@media (max-width: 600px) { header { align-items: start; flex-direction: column; gap: 0; }.hint { text-align: left; margin-top: 0; } }
